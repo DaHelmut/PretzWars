@@ -13,3 +13,5 @@ The sources include the graphics (svg files) sounds (ogg and mp3) and web browse
 This game was tested with Chrome for Android.
 
 Have fun !
+
+PS : online version is available here http://maxime.muller.free.fr/PretzWars/
