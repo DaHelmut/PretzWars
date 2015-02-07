@@ -1,0 +1,106 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+	<title>Phaser - Making your first game, part 2</title>
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
+
+function preload() {
+  game.load.atlas('alien', 'assets/sprites/alien.png', null, alienData);
+}
+
+var alien;
+
+function create() {
+
+    alien = game.add.sprite(game.world.centerX, 300, 'alien');
+
+	alien.animations.add('fly');
+    alien.animations.play('fly', 10, true);
+
+}
+
+var alienData = {
+{"frames": [
+
+{
+	"filename": "ship_1.png",
+	"frame": {"x":2,"y":2,"w":250,"h":134},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":250,"h":134},
+	"sourceSize": {"w":250,"h":134},
+	"pivot": {"x":0,"y":0}
+},
+{
+	"filename": "ship_2.png",
+	"frame": {"x":2,"y":138,"w":250,"h":134},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":250,"h":134},
+	"sourceSize": {"w":250,"h":134},
+	"pivot": {"x":0,"y":0}
+},
+{
+	"filename": "ship_3.png",
+	"frame": {"x":2,"y":274,"w":250,"h":134},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":250,"h":134},
+	"sourceSize": {"w":250,"h":134},
+	"pivot": {"x":0,"y":0}
+},
+{
+	"filename": "ship_4.png",
+	"frame": {"x":2,"y":410,"w":250,"h":134},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":250,"h":134},
+	"sourceSize": {"w":250,"h":134},
+	"pivot": {"x":0,"y":0}
+},
+{
+	"filename": "ship_5.png",
+	"frame": {"x":2,"y":546,"w":250,"h":134},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":250,"h":134},
+	"sourceSize": {"w":250,"h":134},
+	"pivot": {"x":0,"y":0}
+},
+{
+	"filename": "ship_6.png",
+	"frame": {"x":2,"y":682,"w":250,"h":134},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":250,"h":134},
+	"sourceSize": {"w":250,"h":134},
+	"pivot": {"x":0,"y":0}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "alien.png",
+	"format": "RGBA8888",
+	"size": {"w":254,"h":818},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:eb8378b38e4986dde87b525bf708fc6e:61b0e76c3a35d8eeac115e808f00b4cd:f5c2820dc1d6657fd77f91f373566390$"
+}
+}
+}
+
+</script>
+
+</body>
+</html>
