@@ -14,4 +14,4 @@ This game was tested with Chrome for Android.
 
 Have fun !
 
-PS : online version is available here http://maxime.muller.free.fr/PretzWars/
+PS : online version is available here http://dahelmut.github.io/PretzWars/
