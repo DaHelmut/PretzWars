@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.game.pretzwars" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<preference name="orientation" value="landscape" />
+	<preference name="fullscreen" value="true" />
+	<preference name="Fullscreen" value="true" />
+	<preference name="SplashScreen" value="splash" />
+	<preference name="SplashScreenDelay" value="2000" />
+    <name>PretzWars</name>
+    <description>
+		PretzWars by Maxime MULLER
+    </description>
+    <author email="maxime.muller57@gmail.com" href="maxime.muller57@gmail.com">
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+	   <platform name="android">
+              <icon src="res\android\ldpi.png" density="ldpi" />
+              <icon src="res\android\mdpi.png" density="mdpi" />
+              <icon src="res\android\hdpi.png" density="hdpi" />
+              <icon src="res\android\xhdpi.png" density="xhdpi" />
+			  <icon src="res\android\xxhdpi.png" density="xxhdpi" />
+			  <icon src="res\android\xxxhdpi.png" density="xxxhdpi" />
+     </platform>
+	 <feature name="SplashScreen">
+		<param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+	</feature>
+	<feature name="Insomnia">
+		<param name="android-package" value="nl.xservices.plugins.Insomnia" />
+	</feature>
+</widget>
